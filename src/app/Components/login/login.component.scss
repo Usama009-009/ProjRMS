@@ -1,0 +1,85 @@
+//Main Div
+.login-Main {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px 2px #000000c9;
+}
+
+//Logo
+.img {
+    width: 200px;
+    height: 120px;
+}
+
+
+//login Button
+.btnLogin {
+    width: 100%;
+    // background-color: #c60506;
+    background-color: rgb(180 0 20 / 60%);
+    border-color: rgb(198 5 6);
+    transition: background-color 1s ease;
+    
+}
+
+.btnLogin:hover {
+    
+    background: linear-gradient(to right, rgb(180 0 20 / 60%),   rgb(198 5 6));
+    border-color: linear-gradient(to right, rgb(198 5 6),rgb(180 0 20 / 60%));
+    box-shadow: 1px 1px 20px 4px #6f6d6d;
+}
+
+//Text Boxes
+.txt{
+    background-color: rgb(198 5 6 / 47%);
+    border-color:rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.txt:focus {
+    box-shadow: 1px 1px 8px 1px #a5252aad;
+    // border-color: rgb(180 0 20 / 71%);
+  }
+
+
+//Responsive margin top
+@media only screen and (max-width: 576px) {
+
+    .margin-auto,
+    .mt-5 {
+        padding-top: 0px !important;
+    }
+
+    //Main Div
+    .login-Main {
+        min-height: 100vh;
+        padding-top: 90px;
+        border-radius: 0px;
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .margin-auto {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .margin-auto {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .margin-auto {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .margin-auto {
+        padding-top: 75px;
+    }
+}
