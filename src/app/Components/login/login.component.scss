@@ -1,85 +1,155 @@
-//Main Div
-.login-Main {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    box-shadow: 1px 1px 15px 2px #000000c9;
+.login-Back {
+    background-image: url(../../../assets/Images/LoginBack.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
-//Logo
-.img {
-    width: 200px;
-    height: 120px;
+.container {
+    height: 100%;
 }
 
 
-//login Button
-.btnLogin {
-    width: 100%;
-    // background-color: #c60506;
-    background-color: rgb(180 0 20 / 60%);
-    border-color: rgb(198 5 6);
-    transition: background-color 1s ease;
-    
+.page {
+    height: 100%;
+    background-color: rgb(255 255 255 / 21%);
+    border-radius: 33px;
+    box-shadow: 0px 0px 10.8px 0.5px white;
 }
 
-.btnLogin:hover {
-    
-    background: linear-gradient(to right, rgb(180 0 20 / 60%),   rgb(198 5 6));
-    border-color: linear-gradient(to right, rgb(198 5 6),rgb(180 0 20 / 60%));
-    box-shadow: 1px 1px 20px 4px #6f6d6d;
+.page-2 {
+    margin-left: 90px;
 }
 
-//Text Boxes
-.txt{
-    background-color: rgb(198 5 6 / 47%);
-    border-color:rgb(255, 255, 255);
-    border-radius: 10px;
+.Heading {
+    width: fit-content;
+    margin-top: 19%;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 0px;
 }
 
-.txt:focus {
-    box-shadow: 1px 1px 8px 1px #a5252aad;
-    // border-color: rgb(180 0 20 / 71%);
-  }
+.Content {
+    width: fit-content;
+    padding-left: 44px;
+    color: white;
+    text-shadow: 1px 1px 1.6px black;
+}
 
+.Heading {
+    width: fit-content;
+    margin-top: 19%;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 0px;
+}
 
-//Responsive margin top
+// //Responsive margin top
 @media only screen and (max-width: 576px) {
 
-    .margin-auto,
-    .mt-5 {
-        padding-top: 0px !important;
+    .Heading {
+        width: fit-content;
+        margin-top: 19%;
     }
 
-    //Main Div
-    .login-Main {
-        min-height: 100vh;
-        padding-top: 90px;
+    .page-2 {
+        margin-left: 90px;
+        display: none;
+    }
+
+    .Row-Height {
+        height: 100%;
+        padding-top: 0%;
+
+    }
+    .page {        
         border-radius: 0px;
-
     }
-
 }
 
 @media only screen and (min-width: 576px) {
-    .margin-auto {
-        padding-top: 50px;
+    .Heading {
+        width: fit-content;
+        margin-top: 20%;
+    }
+
+    .page-2 {
+
+        display: none;
+    }
+
+
+    .Row-Height {
+        height: 100%;
+        padding-top: 0%;
+
+    }
+    .page {        
+        border-radius: 0px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .margin-auto {
-        padding-top: 70px;
+    .Heading {
+        width: fit-content;
+        margin-top: 35%;
+    }
+
+    .page-2 {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .Row-Height {
+        height: 88%;
+        padding-top: 8%;
+
+    }
+
+    .page {        
+        border-radius:33px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .margin-auto {
-        padding-top: 70px;
+    .Heading {
+        width: fit-content;
+        margin-top: 29%;
+    }
+
+    .page-2 {
+        display: block;
+        margin-left: 80px;
+    }
+
+
+    .Row-Height {
+        height: 88%;
+        padding-top: 8%;
+
+    }
+    .page {        
+        border-radius:33px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .margin-auto {
-        padding-top: 75px;
+    .Heading {
+        width: fit-content;
+        margin-top: 19%;
+    }
+
+    .page-2 {
+        display: block;
+        margin-left: 90px;
+    }
+
+    .Row-Height {
+        height: 88%;
+        padding-top: 8%;
+
+    }
+    .page {        
+        border-radius:33px;
     }
 }
