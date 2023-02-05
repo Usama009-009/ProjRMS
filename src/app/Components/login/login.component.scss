@@ -54,59 +54,138 @@
 }
 
 // Form
+
 .frmlogin {
     margin-top: 80px;
+    position: relative;
 }
 
-.txt-Control {    
+// .txt-Border{}
+.txt-Control {
     width: 100%;
     // background-color: #ffffff3d;
     background-color: transparent;
     outline: none;
     border: none;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 4px;
     color: white;
+    box-sizing: border-box;
     // border-bottom: 2px solid #c9c9c98c;
-     padding-bottom: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
     // transition: border-bottom 0.5s ease-in-out;
 
-    display: inline-block;
-    padding-bottom: 0.25rem; /* defines the space between text and underline */
-    position: relative;
 }
 
-.txt-Control::before {
-    content: "";
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.txt-Control {
+    border: 0;
+    // padding: 7px 0px;
+    border-bottom: 1px solid #c9c9c98c;
+
+}
+
+.txt-Control~.txt-Border {
     position: absolute;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(0, 255, 0);
-    transition: width 0.25s ease-out;
-  }
-  .txt-Control:hover::before {  
+    background-color: #dadada;
+    transition: 0.4s;
+}
+
+
+.txt-Control:focus~.txt-Border,
+.txt-Control:hover~.txt-Border {
     width: 100%;
-  }
+    transition: 0.4s;
+}
 
-.txt-Control::-webkit-input-placeholder {
+.txt {
+    position: relative;
+    margin-top: 10px;
+}
+
+//-----------
+.txt-1 {
+    position: relative;
+    margin-top: 25px;
+}
+
+.txt-Pass {
+    width: 100%;
+    // background-color: #ffffff3d;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding-left: 4px;
+    color: white;
+    box-sizing: border-box;
+    // border-bottom: 2px solid #c9c9c98c;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    border: 0;
+    border-bottom: 1px solid #c9c9c98c;
+
+}
+
+.txt-Pass~.txt-Border-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dadada;
+    transition: 0.4s;
+}
+
+
+.txt-Pass:focus~.txt-Border-1,
+.txt-Pass:hover~.txt-Border-1 {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.txt-Pass::-webkit-input-placeholder ,.txt-Control::-webkit-input-placeholder {
     color: #ffffff85;
 }
 
-.txt-Control:-moz-placeholder {
+.txt-Pass:-moz-placeholder ,.txt-Control:-moz-placeholder {
     color: #ffffff85;
 }
 
-.txt-Control::-moz-placeholder {
+.txt-Pass::-moz-placeholder ,.txt-Control::-moz-placeholder {
     color: #ffffff85;
 }
 
-.txt-Control:-ms-input-placeholder {
+.txt-Pass:-ms-input-placeholder ,.txt-Control:-ms-input-placeholder {
     color: #ffffff85;
 }
 
+.form-check
+{width: fit-content;}
+
+
+.form-check-label{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
 // //Responsive margin top
 @media only screen and (max-width: 576px) {
 
@@ -220,8 +299,3 @@
         border-radius: 33px;
     }
 }
-
-
-
-
-
