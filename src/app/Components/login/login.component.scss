@@ -62,7 +62,8 @@
 
 // .txt-Border{}
 .txt-Control {
-    width: 100%;
+    // width: 100%;
+    width: 95.5%;
     // background-color: #ffffff3d;
     background-color: transparent;
     outline: none;
@@ -94,7 +95,7 @@ input:-webkit-autofill:active {
 .txt-Control {
     border: 0;
     // padding: 7px 0px;
-    border-bottom: 1px solid #c9c9c98c;
+    // border-bottom: 1px solid #c9c9c98c;
 
 }
 
@@ -127,7 +128,8 @@ input:-webkit-autofill:active {
 }
 
 .txt-Pass {
-    width: 100%;
+    // width: 100%;
+    width: 95.5%;
     // background-color: #ffffff3d;
     background-color: transparent;
     outline: none;
@@ -141,7 +143,7 @@ input:-webkit-autofill:active {
     padding-bottom: 2px;
     padding-left: 5px;
     border: 0;
-    border-bottom: 1px solid #c9c9c98c;
+    // border-bottom: 1px solid #c9c9c98c;
 
 }
 
@@ -342,7 +344,40 @@ input:-webkit-autofill:active {
 }
 
 .btn:hover{
-    border-color: rgb(92, 194, 235);
-    color:  rgb(92, 194, 235);
+    border-color: rgba(0, 0, 0, 0.671);
+    color:  rgba(0, 0, 0, 0.452);
+    box-shadow: 1px 1px 8px #00000085;
 }
 
+
+.alert
+{
+    --bs-alert-padding-x: auto;
+}
+
+
+.txt-Control~.txt-Border-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color:  #c9c9c98c;
+    transition: 0.4s;
+}
+
+.txt-Pass~.txt-Border-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color:  #c9c9c98c;
+    transition: 0.4s;
+}
+
+.UserError, .PassError{
+    display: none;
+    color :rgb(153, 8, 8);
+    
+}
